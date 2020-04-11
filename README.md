@@ -2,14 +2,14 @@
 
 ## Goal
 
-The goal is to create an Angular demo app with .NET Core backend in this folder structure:
+The goal is to create an Angular demo app with .NET Core backend in the following folder structure. In my eyes, this separates the projects better then the Angular template in Visual Studio. It is a recommended way to separate frontend and backend:
 
 ```cmd
 rem Angular code in frontend folder
-<myApp>\frontend
+<myApp>\frontend\...
 
 rem .NET Core project in backend folder
-<myApp>\backend
+<myApp>\backend\...
 ```
 
 ## What you should bring
@@ -52,10 +52,10 @@ What you see here is some random json data from the demo controller. (see Contro
 ### Frontend Preparation
 
 - Make sure you have the latest LTS of node/npm installed: <https://nodejs.org/en/download/>
-- Install Editor for Frontend. I use VS Code: <https://visualstudio.microsoft.com/>
-- Install angular cli globally. Details see <https://angular.io/guide/setup-local>
+- Install an editor for your Angular frontend. I use VS Code: <https://visualstudio.microsoft.com/>
+- Install the Angular cli globally. Details see <https://angular.io/guide/setup-local>
 
-Install CLI in cmd:
+Install CLI from cmd:
 
 ``` cmd
 rem -g: globally in c:\Users\<username>\AppData\Roaming\npm\node_modules\
@@ -228,11 +228,17 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## Check the application
 
-1. Start backend
-2. Start Frontend
+1. Start your new Backend
+2. Start your new Frontend
 3. Check Console Output: you should see an array of data:
 
 ![Success :)](/images/array.png)
+
+If you can see the array, you just created your first business application in Angular 9 and .NET core 3.1. Congratulations! Please let me know on twitter ![@patrikbo](https://avatars3.githubusercontent.com/u/50278?s=14&v=4) [@patrikbo](https://twitter.com/patrikbo). Thank you!
+
+### Whats next
+
+Swagger/OpenApi are tools which can create your Angular code to access the backend: check this <https://github.com/boeschenstein/angular9-dotnetcore-openapi-swagger>
 
 ## Additional Information
 
