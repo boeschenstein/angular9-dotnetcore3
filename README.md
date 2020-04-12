@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal is to create an Angular demo app with .NET Core backend in the following folder structure. In my eyes, this separates the projects better then the Angular template in Visual Studio. It is a recommended way to separate frontend and backend:
+The goal is to create an Angular demo app with .NET Core backend in the following folder structure. It is a recommended way to separate frontend and backend. In my eyes, this separates the projects better then the Angular template offered from Visual Studio:
 
 ```cmd
 rem Angular code in frontend folder
@@ -21,7 +21,7 @@ Some basic understanding of
 - npm, node
 - Web technology
 
-## New WebAPI project (backend)
+## Create a new WebAPI project (backend)
 
 ### Backend Preparation
 
