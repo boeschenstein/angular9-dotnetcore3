@@ -45,7 +45,7 @@ Configure the green arrow in the toolbar (use the small arrow on the right side 
 
 Your Browser will spin up and shows this URL: <https://localhost:5001/weatherforecast>
 
-What you see here is some random json data from the demo controller. (see Controllers\WeatherForecastController.cs). Due to randomizing, every time you refresh the browser, you'll different data.
+What you see here is some random json data from the demo controller. (see Controllers\WeatherForecastController.cs). Due to randomizing, every time you refresh the browser, you'll get different data.
 
 ## New Angular 9 project (frontend)
 
@@ -55,7 +55,7 @@ What you see here is some random json data from the demo controller. (see Contro
 - Install an editor for your Angular frontend. I use VS Code: <https://visualstudio.microsoft.com/>
 - Install the Angular cli globally. Details see <https://angular.io/guide/setup-local>
 
-Install CLI from cmd:
+Install the Angular CLI from cmd:
 
 ``` cmd
 rem -g: globally in c:\Users\<username>\AppData\Roaming\npm\node_modules\
