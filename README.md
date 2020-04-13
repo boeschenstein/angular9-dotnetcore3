@@ -2,7 +2,7 @@
 
 ## Goal
 
-The goal is to create an Angular demo app with .NET Core backend in the following folder structure. It is a recommended way to separate frontend and backend. In my eyes, this separates the projects better then the Angular template offered from Visual Studio:
+The goal is to create an Angular demo app with .NET Core backend in the following folder structure - from scratch. It is a recommended way to separate frontend and backend. In my eyes, this separates the projects better then the Angular template offered from Visual Studio:
 
 ```cmd
 rem Angular code in frontend folder
@@ -29,7 +29,7 @@ Install "Visual Studio 2019" from <https://visualstudio.microsoft.com/>. The fre
 
 ### Create new .NET WebAPI project
 
-- Create a folder "c:\temp\myAngular9NetCore3App"
+- Create a folder `c:\temp\myAngular9NetCore3App`
 - Start cmd in this folder
 - Now create a new webapi project in cmd:
 
@@ -39,13 +39,13 @@ dotnet new webapi -n MyBackend
 
 Rename the new folder from "MyBackend" to "backend".
 
-In Visual Studio, load this project: "c:\temp\myAngular9NetCore3App\backend\MyBackend.csproj"
+In Visual Studio, load this project: `c:\temp\myAngular9NetCore3App\backend\MyBackend.csproj`
 
 Configure the green arrow in the toolbar (use the small arrow on the right side of the button): choose "MyBackend" instead of "IIS Express". Run the project (press F5).
 
 Your Browser will spin up and shows this URL: <https://localhost:5001/weatherforecast>
 
-What you see here is some random json data from the demo controller. (see Controllers\WeatherForecastController.cs). Due to randomizing, every time you refresh the browser, you'll get different data.
+What you see here is some random json data from the demo controller. (see `Controllers\WeatherForecastController.cs`). Due to randomizing, every time you refresh the browser, you'll get different data.
 
 ## New Angular 9 project (frontend)
 
@@ -65,7 +65,7 @@ npm install -g @angular/cli
 
 ### Create new Angular project
 
-Open a cmd in this folder "c:\temp\myAngular9NetCore3App"
+Open a cmd in this folder `c:\temp\myAngular9NetCore3App`
 
 Create new Angular app in cmd:
 
@@ -100,7 +100,7 @@ What you see here is the Angular demo website.
 
 ### Frontend: Load Data from Backend
 
-Open cmd in "c:\temp\myAngular9NetCore3App\frontend". Enter "code ." to spin up VS Code in the right folder:
+Open cmd in `c:\temp\myAngular9NetCore3App\frontend`. Enter "code ." to spin up VS Code in the right folder:
 
 ``` cmd
 rem 'code .' starts VS Code and sets the current folder as work directory
@@ -111,7 +111,7 @@ code .
 ```
 
 Press Control-C in cmd or close browser to stop the web app.
-Edit \src\app\app.module.ts: Add HttpClientModule:
+Edit `\src\app\app.module.ts`: Add HttpClientModule:
 
 ``` typescript
 ...
@@ -176,6 +176,8 @@ Now start frontend project:
 rem Go to the frontend folder
 cd c:\temp\myAngular9NetCore3App\frontend
 
+rem s: serve
+rem o: open browser
 rem This will spin up a web server and a browser on http://localhost:4200
 ng s --o
 ```
@@ -186,7 +188,7 @@ Open Debugger tools in your browser by pressing Shift-Control-I. Refresh the con
 
 Now you'll see a CORS error in the console output:
 
-![CORS error](/images/cors_error.png)
+![CORS error](./images/cors_error.png)
 
 ### Fix CORS error
 
@@ -232,7 +234,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 2. Start your new Frontend
 3. Check Console Output: you should see an array of data:
 
-![Success :)](/images/array.png)
+![Success :)](./images/array.png)
 
 If you can see the array, you just created your first business application in Angular 9 and .NET core 3.1. Congratulations! Please let me know on twitter ![@patrikbo](https://avatars3.githubusercontent.com/u/50278?s=14&v=4) [@patrikbo](https://twitter.com/patrikbo). Thank you!
 
