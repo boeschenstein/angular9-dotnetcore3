@@ -2,14 +2,26 @@
 
 ## Goal
 
-The goal is to create an Angular demo app with .NET Core backend in the following folder structure - from scratch. It is a recommended way to separate frontend and backend. In my eyes, this separates the projects better then the Angular template offered from Visual Studio:
+The goal is to create an **Angular demo app** with **.NET Core backend** in the following folder structure - from scratch. It is a recommended way to separate frontend and backend in different folders (unlike the VS Templates suggests it):
+
+Suggestion from Visual Studio WebApi Template with Angular: <https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angular>
 
 ```cmd
-rem Angular code in frontend folder
-<myApp>\frontend\...
+rem .NET Core project in the root
+<myApp>\...
 
+rem Angular code in ClientApp folder within then backend folder
+<myApp>\ClientApp\...
+```
+
+The following approach separates the projects much better and it is less confusing for new developers/team members:
+
+```cmd
 rem .NET Core project in backend folder
 <myApp>\backend\...
+
+rem Angular code in frontend folder
+<myApp>\frontend\...
 ```
 
 ## What you should bring
@@ -238,7 +250,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 If you can see the array, you just created your first business application in Angular 9 and .NET core 3.1. Congratulations! Please let me know on twitter ![@patrikbo](https://avatars3.githubusercontent.com/u/50278?s=14&v=4) [@patrikbo](https://twitter.com/patrikbo). Thank you!
 
-### Whats next
+## Whats next
 
 Swagger/OpenApi are tools which can create your Angular code to access the backend: check this <https://github.com/boeschenstein/angular9-dotnetcore-openapi-swagger>
 
@@ -246,9 +258,10 @@ Swagger/OpenApi are tools which can create your Angular code to access the backe
 
 ### Links
 
-- ASP.NET WebApi: <https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api>
+- ASP.NET WebApi: <https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio>
 - Angular: <https://angular.io/>
 - CORS: <https://docs.microsoft.com/en-us/aspnet/core/security/cors>
+- About me: <https://github.com/boeschenstein>
 
 ### Current Versions
 
