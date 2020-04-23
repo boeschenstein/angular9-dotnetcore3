@@ -24,6 +24,28 @@ rem Angular code in frontend folder
 <myApp>\frontend\...
 ```
 
+## Content
+
+- [Angular 9 (Frontend) and .NET Core 3.1 (Backend)](#angular-9-frontend-and-net-core-31-backend)
+  - [Goal](#goal)
+  - [Content](#content)
+  - [What you should bring](#what-you-should-bring)
+  - [Create a new WebAPI project (backend)](#create-a-new-webapi-project-backend)
+    - [Backend Preparation](#backend-preparation)
+    - [Create new .NET WebAPI project](#create-new-net-webapi-project)
+  - [New Angular 9 project (frontend)](#new-angular-9-project-frontend)
+    - [Frontend Preparation](#frontend-preparation)
+    - [Create new Angular project](#create-new-angular-project)
+  - [Put it all together](#put-it-all-together)
+    - [Frontend: Load Data from Backend](#frontend-load-data-from-backend)
+    - [Check new Angular app](#check-new-angular-app)
+    - [Fix CORS error](#fix-cors-error)
+  - [Check the application](#check-the-application)
+  - [Whats next](#whats-next)
+  - [Additional Information](#additional-information)
+    - [Links](#links)
+    - [Current Versions](#current-versions)
+
 ## What you should bring
 
 Some basic understanding of
