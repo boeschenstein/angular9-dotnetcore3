@@ -40,6 +40,7 @@ rem Angular code in frontend folder
     - [Frontend: Load Data from Backend](#frontend-load-data-from-backend)
     - [Check new Angular app](#check-new-angular-app)
     - [Fix CORS error](#fix-cors-error)
+    - [Fine tune CORS](#fine-tune-cors)
   - [Check the application](#check-the-application)
   - [Whats next](#whats-next)
   - [Additional Information](#additional-information)
@@ -260,6 +261,24 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     app.UseCors(MyAllowSpecificOrigins); // AFTER app.UseRouting();
     ...
 }
+```
+
+### Fine tune CORS
+
+For this demo, we don't need more security. But for a real application and to keep your app secure, CORS has to be configured very thoroughly.
+
+- Only allow the headers you need
+- Only allow the methods you need
+
+``` c#
+options.AddPolicy(name: MyAllowSpecificOrigins,
+    builder =>
+    {
+        builder.WithOrigins("http://localhost:4200") // Frontend URL
+            .AllowAnyHeader()                        // allow any Header
+            .AllowAnyMethod();                       // also allow PUT and POST and other methods
+            // .WithMethods("PUT", "GET"); allow PUT and GET only
+    });
 ```
 
 ## Check the application
